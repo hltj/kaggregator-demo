@@ -14,7 +14,7 @@ import java.util.concurrent.atomic.AtomicLong
 
 fun main(args: Array<String>): Unit = io.ktor.server.cio.EngineMain.main(args)
 
-val httpClient = HttpClient() {
+val httpClient = HttpClient {
     install(JsonFeature)
 }
 

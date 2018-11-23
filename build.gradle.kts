@@ -13,11 +13,10 @@ application.mainClassName = "io.ktor.server.cio.EngineMain"
 repositories {
     jcenter()
     maven(url = "https://kotlin.bintray.com/kotlinx")
-    maven(url = "https://kotlin.bintray.com/ktor")
     mavenCentral()
 }
 
-val ktorVersion = "1.0.0-beta-3"
+val ktorVersion = "1.0.0"
 fun ktor(module: String) = "io.ktor:ktor-$module:$ktorVersion"
 
 dependencies {
